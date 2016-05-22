@@ -1,0 +1,329 @@
+  * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background: #f0f0f0;
+    font: 14px/20px Arial, Sans-Serif;
+    color: #555;
+    margin: 0;
+}
+    
+p{
+                padding: 1%;
+            }
+            img{
+                text-align: center;
+                max-width: 100%;
+                height: auto;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+nav li a:link,
+nav li a:visited{
+    color: #a95900;
+    font-size: 120%;
+    background-color: #f0f0f0;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(43, 43, 77, 0.5);
+}
+        nav li a:hover{
+                color: #405580;
+                background-color: red;
+                -webkit-transform: scale(1.5,1.5);
+            }
+            header{
+                background: #405580;
+                width: 100%;
+                height: 100px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                opacity: 0.90;
+            }
+            #logo{
+                margin: 20px;
+                float: left;
+                width: 232px;
+                height: 91px;
+                background: url('../images/logo.png') no-repeat center;
+            }
+            nav{
+                float: right;
+                padding: 35px 20px 20px 0;
+            }
+            #menu-icon{
+                display: hidden;
+                width: 40px;
+                height: 40px;
+                background: url(../images/icon.png) center;
+            }
+            a:hover#menu-icon{
+                border-radius: 4px 4px 0 0;
+            }
+#myForm{
+            background-image: url('../images/sbNorm.png');
+            background-repeat: no-repeat;
+        }
+        #sf{
+            background: url(../images/search-bar.png);
+            background-repeat: no-repeat;
+            border: none;
+            height: 30px;
+            width: 230px;
+            outline: none;
+            background-color: transparent;
+            color: #ccc;
+            padding-right: 7px;
+            padding-left: 7px;
+        }
+        #searchBox{ float: left; width: 240px;}
+        #searchButton{float: left; width: 27px;}
+            ul{
+                list-style: none;
+            }
+            nav ul li{
+                display: inline-block;
+                float: left;
+                padding: 10px;
+            }
+            
+            #doc{
+                margin: 40px 0;
+            }
+            #content{
+                margin: 0 auto;
+                max-width: 1140px;
+                margin-top: 110px
+            }
+            .burberry{
+                max-width: 960px;
+                margin-top: 110px;
+            }
+.inside .left{
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.inside .left p{
+    margin-left: 10%;
+}
+.inside .left h1{
+    text-align: center;
+    color: #21618c;
+}
+.inside .left img{
+    float: left;
+    width: 100px;
+}
+.inside .right{
+    width: 45%;
+        float: right;
+    margin-left: 5px;
+}
+
+            footer section{
+                width: 29%;
+                float: left;
+                margin: 2% 2%;
+                text-align: center;
+            }
+            clear{
+                clear: both;
+            }
+            article{
+                float: left;
+                margin: 0 auto;
+                width: 50%;
+                height: auto;
+                padding: 4%;
+            }
+            aside{
+                float: right;
+                margin: auto;
+                width: 35%;
+                height: auto;
+                padding: 3px;
+            }
+            ul .gym li{
+                padding: 3%
+            }
+            footer{
+                background: #333333;
+                width: 100%;
+                overflow: hidden;
+                opacity: 0.90;
+            }
+footer section p{
+    margin-left: 20px;
+}
+            footer p, footer h3{
+                color: #fff;
+            }
+            footer p a{
+                color: #fff;
+                text-decoration: none;
+            }
+            .social li{
+                display: inline;
+            }
+            .social li img{
+                height: 50px;
+            }
+            .second{
+                border-top: 1px solid #404e50;
+                background-color: #333333;
+                max-height: 50px;
+                text-align: center;
+                opacity: 0.95;
+            }
+            /*--------------MEDIA-------------------------------------*/
+            
+            @media screen and (max-width: 1075px){
+                body{
+                    position: absolute;
+                }
+                @media screen and (max-width: 1075px){
+                    header{
+                        position: absolute;
+                    }
+                #menu-icon{
+                    display: inline-block;
+                }
+                nav ul, nav:active ul{
+                    display: none;
+                    position: absolute;
+                    padding: 20px;
+                    background: #405580;
+                    border: 1px solid #fff;
+                    right: 20px;
+                    top: 60px;
+                    width: 50%;
+                    border-radius: 2px 0 2px 2px;
+                }
+                nav li{
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+                nav:hover ul{
+                    display: block;
+                    border-radius: 10px;
+                    width: 270px;
+                }
+                footer{
+                    display: block;
+                }
+                footer section{
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                article{
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                aside{
+                    float: left;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .inside .left{
+    float: left;
+    width: 100%;
+}
+.inside .right{
+    width: 100%;
+        float: left;
+}
+                #container{
+                    width: 100%;
+                    
+                }
+                #container input{
+                    width: 200px;
+                }
+                form ul li input, select, span {  
+float:none;  
+margin-bottom: 2%;  
+}  
+            }
+}
+/*------------form-------------*/
+
+#container li {  
+list-style: none;  
+margin-bottom: 2%;
+    font-size: 130%;
+    color: #000;
+}  
+  
+form ul li label{  
+float: left;  
+clear: left;  
+width: 20%;  
+text-align: right;  
+margin-right: 5%;  
+font-family:Verdana, Arial, Helvetica, sans-serif;  
+font-size:100%;  
+}  
+  
+form ul li input, select, span {  
+float: left;  
+margin-bottom: 2%;  
+}  
+  
+form textarea {  
+float: left;  
+width: 50%;  
+height: 150px;  
+}  
+  
+[type="submit"] {  
+clear: left;  
+margin: 20px 0 0 230px;  
+font-size:140%;  
+}  
+  
+#container p, #container h1 {  
+text-align: center;  
+font-weight: bold; 
+    color: #000;
+} 
+#container p{
+    font-size: 130%;
+}
+strong{
+    color: red;
+}
+#container{
+    margin-left: 15%;
+    background-color: rgba(43, 43, 77, 0.50);
+    width:70%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 110px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 3%;
+}
+input.invalid, textarea.invalid{
+    border: 2px solid red;
+}
+
+input.valid, textarea.valid{
+    border: 2px solid green;

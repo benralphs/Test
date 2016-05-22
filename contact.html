@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>my test</title>
+     <link type="text/css" rel="stylesheet" href="css/test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/burberry.css">
+</head>
+<body>
+    <header>
+            <a href="index.html" id="logo" title="cosmetics.com"></a>
+            <nav>
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                     <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><div id="formContainer"><form id="myForm" action="parser.php" method="post">
+            <div id="searchBox">
+                <input type="text" id="sf" name="query" onfocus="fieldSwap('searchbar.png')" onblur="fieldSwap('search-bar.png')">
+            </div>
+            <div id="searchButton">
+                <input type="image" src="images/download.png" name="submit" id="sb" alt="Btn" onmouseover="buttonSwap('sbNorm.png')" onmouseout="buttonSwap('download.png')" >
+            </div>
+        </form>  </div></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div id="container">
+        <h1>Contact Form</h1>  
+        <p>Use tab keys to move from one input field to the next.</p>  
+        <p>Fields marked with <strong>*</strong> must be completed before you can proceed</p>
+        <form name='registration' onSubmit="return formValidation(), validate();">  
+            <ul>  
+                <li><label for="userid">User id:<strong>*</strong></label></li>  
+                <li><input type="text" name="userid" size="12" /></li>  
+                <li><label for="passid">Password:<strong>*</strong></label></li>  
+                <li><input type="password" name="passid" size="12" /></li>  
+                <li><label for="username" id="contact_name">Name:<strong>*</strong></label></li>  
+                <li><input type="text" id="contact_name" name="username" size="50" /></li>  
+                <li><label for="address">Address:</label></li>  
+                <li><input type="text" name="address" size="50" /></li>  
+                <li><label for="country">Country:<strong>*</strong></label></li>  
+                <li><select name="country">  
+                    <option selected="" value="Default">(Please select a country)</option>  
+                    <option value="NG">Nigeria</option>  
+                    <option value="AL">Canada</option>  
+                    <option value="DZ">India</option>  
+                    <option value="AS">Russia</option>  
+                    <option value="FR">France</option>  
+                    <option value="KN">Kenya</option>  
+                    <option value="ZA">South Africa</option>  
+                    <option value="GH">Ghana</option>  
+                    <option value="OT">Other</option>  
+                    </select></li>  
+                <li><label for="zip">ZIP Code:<strong>*</strong></label></li>  
+                <li><input type="text" name="zip" /></li>  
+                <li><label for="email">Email:<strong>*</strong></label></li>  
+                <li><input type="text" name="email" size="50" /></li>  
+                <li><label id="gender">Sex:<strong>*</strong></label></li>  
+                <li><input type="radio" name="gender" value="Male"  checked/><span>Male</span>
+                    <input type="radio" name="gender" value="Female" /><span>Female</span></li>  
+                <li><label>Language:</label></li>  
+                <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>  
+                <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>  
+                <li><label for="desc">Message:</label></li>  
+                <li><textarea name="desc" id="desc"></textarea></li>  
+                <li><input type="submit" name="submit" value="Submit" /></li>  
+            </ul>  
+        </form>  
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <footer style="margin-top: 20px;">
+            <section>
+                <h3><img src="images/logo.png" style="width: 100px;"></h3>
+                <p><b>1223-456-7890</b><br><br>
+                Somewhere around the<br>
+                where goats wear dresses<br>
+                and huge baseball hats<br>
+                benralphs@ymail.com</p>
+            </section>
+            <section>
+                <h3>Connect with me</h3>
+                <ul class="social">
+                    <li><a href="http://facebook.com/benralphs"><img src="images/face.png"></a></li>
+                    <li><a href="https://plus.google.com/115793156931609597557/posts"><img src="images/google.jpg"></a></li>
+                    <li><a href="http://twitter.com/benralph"><img src="images/tweet.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ben-raphaels-ngoha-56b39899"><img src="images/linkd.png"></a></li>
+                </ul>
+            </section>
+            <section>
+                <img src="images/images.png">
+            </section>
+        </footer>
+        <footer class="second">
+            <p>Copyright - Benralph, 2016.</p> 
+        </footer>
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script type="text/javascript" src="js/jquery.blueberry.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    </body>
+</html>
